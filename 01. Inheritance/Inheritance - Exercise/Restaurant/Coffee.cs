@@ -3,12 +3,11 @@
     public class Coffee : HotBeverage
     {
 
-        private double coffeeMilliliters;
-        private decimal coffeePrice;
-        private double caffeine;
+        private const double CoffeeMilliliters = 50;
+        private const decimal CoffeePrice = 3.50m;
 
         public Coffee(string name, double caffeine)
-            : base(name, 3.50m, 50)
+            : base(name, CoffeePrice, CoffeeMilliliters)
         {
             this.Caffeine = caffeine;
         }
