@@ -9,7 +9,6 @@ namespace P04.PizzaCalories
         private string name;
         private readonly List<Topping> toppings;
         private Dough dough;
-        //private double totalCalories;
 
         public Pizza()
         {
@@ -52,19 +51,6 @@ namespace P04.PizzaCalories
                 this.dough = value;
             }
         }
-
-        //public double TotalCalories
-        //{
-        //    get
-        //    {
-        //        return this.totalCalories;
-        //    }
-        //    internal set
-        //    {
-        //        value = CalculateTotalCalories(dough, toppings);
-        //        this.totalCalories = value;
-        //    }
-        //}
 
         private double CalculateTotalCalories(Dough dough, List<Topping> toppings)
         {
