@@ -33,7 +33,6 @@ namespace P03.Cards
 
         private static void PrintCards(List<Card> cards)
         {
-
             foreach (var card in cards)
             {
                 Console.Write(card);
