@@ -16,46 +16,6 @@ namespace Heroes.Models.Map
             bool winKnights = false;
             bool winBarbarians = false;
 
-            //while (knights.Any(k => k.IsAlive) || barbarians.Any(b => b.IsAlive))
-            //{
-            //    foreach (var knight in knights.Where(k => k.IsAlive == true))
-            //    {
-            //        foreach (var barb in barbarians.Where(b => b.IsAlive == true))
-            //        {
-            //            barb.TakeDamage(knight.Weapon.DoDamage());
-            //        }
-
-            //        if (barbarians.Any(b => b.IsAlive == false))
-            //        {
-            //            winKnights = true;
-            //            break;
-            //        }
-            //    }
-            //    if (winKnights)
-            //    {
-            //        break;
-            //    }
-
-            //    foreach (var barb in barbarians.Where(b => b.IsAlive == true))
-            //    {
-            //        foreach (var knight in knights.Where(k => k.IsAlive == true))
-            //        {
-            //            knight.TakeDamage(barb.Weapon.DoDamage());
-            //        }
-
-            //        if (knights.Any(k => k.IsAlive == false))
-            //        {
-            //            winBarbarians = true;
-            //            break;
-            //        }
-            //    }
-
-            //    if (winBarbarians)
-            //    {
-            //        break;
-            //    }
-            //}
-
             while (knights.Any() && barbarians.Any())
             {
                 foreach (var knight in knights)
