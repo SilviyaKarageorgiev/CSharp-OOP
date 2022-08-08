@@ -6,11 +6,11 @@ namespace SpaceStation.Models.Planets
     public class Planet : IPlanet
     {
         private string name;
-        private readonly ICollection<IPlanet> items;
+        private readonly ICollection<string> items;
 
         public Planet(string name)
         {
-            items = new List<IPlanet>();
+            items = new List<string>();
         }
 
         public ICollection<string> Items => throw new System.NotImplementedException();
