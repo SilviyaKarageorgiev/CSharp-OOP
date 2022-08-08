@@ -5,11 +5,11 @@ namespace SpaceStation.Models.Bags
 {
     public class Backpack : IBag
     {
-        private readonly ICollection<IBag> items;
+        private readonly ICollection<string> items;
 
         public Backpack()
         {
-            items = new List<IBag>();
+            items = new List<string>();
         }
 
         public ICollection<string> Items => throw new System.NotImplementedException();
