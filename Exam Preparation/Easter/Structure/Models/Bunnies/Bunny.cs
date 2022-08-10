@@ -7,7 +7,7 @@ namespace Easter.Models.Bunnies
     public abstract class Bunny : IBunny
     {
         private string name;
-        private string energy;
+        private int energy;
         private readonly List<IDye> dyes;
 
         public Bunny(string name, int energy)
